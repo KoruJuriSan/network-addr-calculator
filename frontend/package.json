@@ -1,0 +1,28 @@
+{
+  "name": "network-calculator",
+  "version": "1.0.0",
+  "description": "un logiciel qui permet de résoudre des calculs de sous-réseau et de faire des exercices pour s'améliorer a les résoudre sous meme coté frontend",
+  "scripts": {
+    "test": "npx jest",
+    "dev": "npx parcel ./index.html",
+    "build": "npx parcel build ./index.html"
+  },
+  "author": "Colle Joulian, Raucroix Romain, Vancoppenolle Brendan",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "eslint": "^8.30.0",
+    "eslint-plugin-react": "^7.31.11",
+    "jest": "^29.3.1",
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.20",
+    "process": "^0.11.10",
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.5.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
