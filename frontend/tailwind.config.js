@@ -4,14 +4,22 @@ module.exports = {
   content: ["./*.jsx", "./**/*.jsx", "./**/**/**/*.jsx"],
   theme: {
     colors: {
-      primary: "#00FF19",
-      secondary: "#040404",
-      mistake: "#BB0000"
+      white: "#FFFFFF",
+      black: "#000000",
+      title: "#82DBE0",
+      primary: "#174EF2",
+      primaryDarken: "#071D5F",
+      secondary: "#9620F2",
+      gradient1Blue: "#345ACC",
+      gradient1Violet: "#521C97",
+      gradient2Blue: "#4A74F0",
+      gradient2Violet: "#7020F2",
+      gradient3Blue: "#7AA4F6",
+      gradient3Violet: "#A27AF8"
     },
     extend: {
       screens: {
-        'bp-min-w-800px': { 'raw': '(max-width: 800px)' },
-        'bp-min-w-1000px': { 'raw': '(max-width: 1000px)' },
+        'mq-35rem': { 'raw': '(max-width: 35rem)' },
       }
     }
   },

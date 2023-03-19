@@ -1,0 +1,27 @@
+.hamburger-bottom {
+    transition: 300ms;
+    transform: translatey(41);
+}
+
+button[aria-expanded="true"] .hamburger-menu .hamburger-bottom {
+    transform-origin: center;
+    transform: rotate(-45deg);
+}
+
+.hamburger-top {
+    transition: 300ms;
+    transform: translatey(-41);
+}
+
+button[aria-expanded="true"] .hamburger-menu .hamburger-top {
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+.hamburger-middle {
+    transition: 200ms;
+}
+
+button[aria-expanded="true"] .hamburger-menu .hamburger-middle {
+    opacity: 0%;
+}

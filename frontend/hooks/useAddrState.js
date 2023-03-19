@@ -2,10 +2,10 @@ const useLimitedState = require("./useLimitedState")
 
 function useAddrState() {
 
-    const [firstOctet, setFirstOctet, firstOctetValueHandler] = useLimitedState(0, 0, 999)
-    const [secondOctet, setSecondOctet, secondOctetValueHandler] = useLimitedState(0, 0, 999)
-    const [thirdOctet, setThirdOctet, thirdOctetValueHandler] = useLimitedState(0, 0, 999)
-    const [lastOctet, setLastOctet, lastOctetValueHandler] = useLimitedState(0, 0, 999)
+    const [firstOctet, setFirstOctet, firstOctetValueHandler] = useLimitedState(0, 0, 255)
+    const [secondOctet, setSecondOctet, secondOctetValueHandler] = useLimitedState(0, 0, 255)
+    const [thirdOctet, setThirdOctet, thirdOctetValueHandler] = useLimitedState(0, 0, 255)
+    const [lastOctet, setLastOctet, lastOctetValueHandler] = useLimitedState(0, 0, 255)
 
 
     return [
