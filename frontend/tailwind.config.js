@@ -18,6 +18,9 @@ module.exports = {
       gradient3Violet: "#A27AF8"
     },
     extend: {
+      spacing: {
+        "126": "31.5rem"
+      },
       screens: {
         'mq-35rem': { 'raw': '(max-width: 35rem)' },
       }
