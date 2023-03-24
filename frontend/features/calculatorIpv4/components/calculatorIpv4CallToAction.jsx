@@ -22,7 +22,7 @@ function CalculatorIpv4CallToAction({value, Addr, SubMask}) {
     }, [isWidgetOpen])
 
     return (
-        isWidgetOpen ? <div className=" bg-white w-126 h-126 flex flex-col relative rounded-lg">
+        isWidgetOpen ? <div className=" w-full flex flex-col relative rounded-lg">
             <button className=" absolute right-3 text-3xl text-black opacity-20" onClick={toggleisWidgetOpen}>x</button>
             <div className=" p-8 flex flex-col gap-12">
                 <div className="flex items-end justify-between">
@@ -67,7 +67,7 @@ function CalculatorIpv4CallToAction({value, Addr, SubMask}) {
                 </div>
             </div>
         </div> : <div className=" flex items-center">
-            <button className=" text-white bold text-2xl border-2 rounded-lg px-5 py-1 relative before:w-full before:h-full before:block before:absolute before:left-0 before:top-0 before:shadow-white before:rounded-md before:shadow-lg before:opacity-25 hover:before:opacity-40" onClick={toggleisWidgetOpen}>
+            <button className=" bold text-2xl border-2 rounded-lg px-5 py-1 relative before:w-full before:h-full before:block before:absolute before:left-0 before:top-0 before:rounded-md before:shadow-lg before:opacity-25 hover:before:opacity-40" onClick={toggleisWidgetOpen}>
                 {value}
             </button>
         </div>

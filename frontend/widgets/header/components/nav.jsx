@@ -43,8 +43,8 @@ module.exports = function Navigation() {
         return navigationInfo.map((onglet, key) => {
             return (
                 <li key={onglet.name.toLowerCase() + "-page-li"}>
-                    <NavLink className={({ isActive }) => { return "rounded-full block" + (isActive ? " bg-white bg-opacity-20 active" : "")}} to={onglet.link}>
-                        <div className=" py-1 px-4 text-white flex gap-1">
+                    <NavLink className={({ isActive }) => { return "rounded-full block" + (isActive ? " underline" : "")}} to={onglet.link}>
+                        <div className=" py-1 px-4 flex gap-1">
                             <span className=" font-bold">{("00" + key).slice(-2)}</span>
                             <span>{onglet.name}</span>
                         </div>
@@ -67,7 +67,6 @@ module.exports = function Navigation() {
     return (
         <nav className={`
         mq-35rem:duration-500
-        mq-35rem:bg-primaryDarken
         mq-35rem:overflow-y-auto
         mq-35rem:fixed
         mq-35rem:top-0

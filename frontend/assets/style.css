@@ -6,11 +6,6 @@
     font-family: 'Ubuntu Mono', monospace;
 }
 
-html {
-    background-color: rgb(52,90,204);
-    background: radial-gradient(circle, rgba(52,90,204,1) 0%, rgba(82,28,151,1) 200%);
-}
-
 html, body, #root {
     height: 100%;
     width: 100%;
