@@ -4,6 +4,9 @@
 
 * {
     font-family: 'Ubuntu Mono', monospace;
+    --green: #41E847;
+    --red: #E84141;
+    --blue: #4165E8;
 }
 
 html, body, #root {

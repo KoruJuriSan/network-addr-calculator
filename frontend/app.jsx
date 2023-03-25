@@ -8,24 +8,27 @@ const History = require("./pages/history/history")
 const colorContext = require("./context/colorContext")
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-const HELPTAILWINDCSS = ["text-green", "text-red", "text-blue", "fill-green", "fill-red", "fill-blue", "bg-green", "bg-red", "bg-blue"]
+const colors = {
+    bg: "green:bg-green red:bg-red blue:bg-blue",
+    text: "green:text-green red:text-red blue:text-blue",
+    fill: "green:fill-green red:fill-red blue:fill-blue",
+}
 
 const App = function() {
 
-    const [primaryColor, setPrimaryColor] = React.useState("green")
+    const [primaryColor, setPrimaryColor] = React.useState("blue")
 
     return (
         <BrowserRouter>
-            <colorContext.Provider value={[primaryColor, setPrimaryColor]}>
-                <div className={` w-full h-full bg-black text-${primaryColor}`}>
-                    <Headder></Headder>
-                    <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route path="/exercices" element={<Exercices />}></Route>
-                        <Route path="/history" element={<History />}></Route>
-                    </Routes>
-                </div>
-            </colorContext.Provider>
+            <div className={` w-full h-full bg-black ${primaryColor}`}>
+                <Headder></Headder>
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/exercices" element={<Exercices />}></Route>
+                    <Route path="/history" element={<History />}></Route>
+                </Routes>
+            </div>
+            <div className="text-green text-red text-blue fill-green fill-red fill-blue bg-green bg-red bg-blue"></div>
         </BrowserRouter>
     )
 }

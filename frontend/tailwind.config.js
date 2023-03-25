@@ -1,6 +1,7 @@
 /* eslint-disable */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  green: "class",
   content: ["./*.jsx", "./**/*.jsx", "./**/**/**/*.jsx"],
   theme: {
     colors: {
