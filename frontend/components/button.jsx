@@ -4,9 +4,10 @@ const { Link } = require("react-router-dom")
 
 function BtnFN({value=undefined, children="Click me !", fn=undefined}) {
     return (
-        <input type="button" className="
-        px-4
+        <button type="button" className="
+        px-6
         py-1
+        w-fit
         max-w-md
         text-lg font-bold
         hover:cursor-pointer
@@ -29,15 +30,16 @@ function BtnFN({value=undefined, children="Click me !", fn=undefined}) {
         hover:before:translate-x-1
         hover:before:translate-y-1
         before:duration-150
-        " value={value || children} onClick={fn} />
+        " onClick={fn}> {value || children} </button>
     )
 }
 
 function BtnLink({value=undefined, children="Click me !", url="/"}) {
     return (
         <Link className="
-        px-4
+        px-6
         py-1
+        w-fit
         max-w-md
         text-lg font-bold
         hover:cursor-pointer

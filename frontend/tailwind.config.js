@@ -5,10 +5,12 @@ module.exports = {
   content: ["./*.jsx", "./**/*.jsx", "./**/**/**/*.jsx"],
   theme: {
     colors: {
-      black: "#040404",
+      black: "#111111",
       green: "#41E847",
       red: "#E84141",
-      blue: "#4165E8"
+      blue: "#4165E8",
+      current: "currentColor",
+      transparent: "transparent"
     },
     extend: {
       spacing: {

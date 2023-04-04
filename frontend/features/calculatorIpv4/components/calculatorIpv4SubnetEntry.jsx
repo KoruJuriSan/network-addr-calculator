@@ -20,7 +20,7 @@ function CalculatorIpv4SubnetEntry({value, setValue, isBinary, upperValue = 255,
     }, [setValue])
     
     return (
-        <input type="text" className={`${isBinary ? " w-20 text-sm" : "w-14 text-xl"} text-center rounded-md bg-black bg-opacity-0 border-2`} value={value.toString(base)} onBlur={handleLeave} onChange={handleChange}/>
+        <input type="text" className={`${isBinary ? " w-20 text-sm" : "w-16 text-xl"} text-center rounded-md bg-transparent bg-opacity-0 border-2`} value={value.toString(base)} onBlur={handleLeave} onChange={handleChange}/>
     )
 }
 

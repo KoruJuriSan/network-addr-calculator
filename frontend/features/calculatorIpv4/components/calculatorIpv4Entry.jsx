@@ -18,7 +18,7 @@ function CalculatorIpv4Entry({value, setValue, leaveTestValue, isBinary}) {
     }, [setValue])
     
     return (
-        <input type="text" className={`${isBinary ? " w-20 text-sm" : "w-14 text-xl"} text-center rounded-md bg-black border-2`} value={value.toString(base)} onBlur={handleLeave} onChange={handleChange}/>
+        <input type="text" className={`${isBinary ? " w-20 text-sm" : "w-16 text-xl"} text-center rounded-md bg-transparent border-2`} value={value.toString(base)} onBlur={handleLeave} onChange={handleChange}/>
     )
 }
 

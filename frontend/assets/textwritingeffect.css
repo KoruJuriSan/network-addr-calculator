@@ -16,12 +16,12 @@
 
 .text-writing-first::before, 
 .text-writing-second::before {
-    background-color: #040404;
+    background-color: #111111;
 }
 
 .text-writing-first::after, 
 .text-writing-second::after {
-    background-color: #00FF19;
+    background-color: unset;
     width: .125em;
 }
 

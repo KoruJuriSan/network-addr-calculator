@@ -1,6 +1,5 @@
 const PropTypes = require("prop-types")
 const React = require("react")
-const colorContext = require("../../../context/colorContext")
 
 function CalculatorIpv4Title({value, children, commingSoon}) {
     return (
@@ -22,8 +21,9 @@ function CalculatorIpv4Title({value, children, commingSoon}) {
         after:block
         after:absolute
         after:bottom-1
-        before:bg-${primaryColor}
-        after:bg-${primaryColor}`}>
+        after:bg-current
+        before:bg-current
+        `}>
             {(value || children) || "Lorem Ipsum."}
         </h1>
     )
