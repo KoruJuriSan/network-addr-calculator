@@ -17,7 +17,7 @@ module.exports = {
         "126": "31.5rem"
       },
       screens: {
-        'mq-35rem': { 'raw': '(max-width: 35rem)' },
+        'mq-35rem': { 'raw': '(max-width: 60rem)' },
       }
     }
   },

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Accueil",
+        "link": "/"
+    },
+    {
+        "name": "Historique",
+        "link": "/history"
+    }
+]

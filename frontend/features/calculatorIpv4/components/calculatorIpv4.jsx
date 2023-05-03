@@ -13,7 +13,7 @@ module.exports = function CalculatorIpv4() {
     const [isWidgetOpen, toggleisWidgetOpen] = useToggle(false)
 
     const btnText = React.useMemo(() => {
-        return isWidgetOpen ? "Reset" : "Calculé !" 
+        return isWidgetOpen ? "Reset" : "Calculer !" 
     })
     return (
         <article className="flex flex-col gap-12 ">

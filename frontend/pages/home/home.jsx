@@ -1,10 +1,22 @@
 const React = require("react")
 const CalculatorIpv4 = require("../../features/calculatorIpv4/components/calculatorIpv4")
 const Button = require("../../components/button")
+const creators = require("../../assets/creators.json")
 
 module.exports = function Home() {
+
+    const creatorsComponents = React.useMemo(() => {
+        return creators.map((creator) => {
+            return (
+                <li key={creator.name + "-github-li"} className=" list-none">
+                    <a href={creator.github} className=" underline pl-4">{creator.name}</a>
+                </li>
+            )
+        })
+    })
+
     return (
-        <div className=" flex flex-wrap gap-32 justify-center mt-32">
+        <div className=" flex flex-wrap gap-32 justify-center py-32 bg-black">
             <article className="Call to action">
                 <h1 className=" text-4xl font-bold mb-7">sub.MASK &gt;</h1>
                 <div className=" mb-7">
@@ -21,8 +33,10 @@ module.exports = function Home() {
                     </p>
                 </div>
                 <div className=" flex gap-8">
-                    <Button.BtnLink url="/exercices">Exercices</Button.BtnLink>
-                    <Button.BtnLink url="/history">Historique</Button.BtnLink>
+                    <h3 className=" text-lg">Créateurs</h3>
+                    <ul className=" flex flex-col">
+                        {creatorsComponents}
+                    </ul>
                 </div>
             </article>
             <CalculatorIpv4 />

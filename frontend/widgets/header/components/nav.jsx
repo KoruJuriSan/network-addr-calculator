@@ -1,39 +1,9 @@
 const React = require("react")
 const { NavLink } = require("react-router-dom")
 const expandedContext = require("../contexts/expandedContext")
-
-const navigationInfo =  [
-    {
-        name: "Accueil",
-        link: "/",
-    },
-    {
-        name: "Exercices",
-        link: "/exercices"
-    },
-    {
-        name: "Historique",
-        link: "/history"
-    },
-]
-
-const creatorsList = [
-    {
-        name: "Colle Joulian",
-        github: "https://github.com/KoruJuriSan",
-        year: "2022-23"
-    },
-    {
-        name: "Vanecoppenolle Brendan",
-        github: "/",
-        year: "2022-23"
-    },
-    {
-        name: "Raucroix Romain",
-        github: "/",
-        year: "2022-23"
-    },
-]
+const navigationInfo = require("../../../assets/navigation.json")
+const creators = require("../../../assets/creators.json")
+const copyright = require("../../../assets/copyright.json")
 
 module.exports = function Navigation() {
 
@@ -54,8 +24,8 @@ module.exports = function Navigation() {
         })
     })
 
-    const creators = React.useMemo(() => {
-        return creatorsList.map((creator) => {
+    const creatorsComponents = React.useMemo(() => {
+        return creators.map((creator) => {
             return (
                 <li key={creator.name + "-github-li"}>
                     <a href={creator.github} className=" text-xs underline pl-4">{creator.name}</a>
@@ -87,9 +57,9 @@ module.exports = function Navigation() {
             <div className=" mq-35rem:gap-10 mq-35rem:flex mq-35rem:flex-col hidden">
                 <ul className="">
                     <h3>Creators :</h3>
-                    {creators}
+                    {creatorsComponents}
                 </ul>
-                <span className=" pb-10 text-sm">Copyright © 2023 Collège des Aumôniers du Travail de Charleroi | Tous droits réservés</span>
+                <span className=" pb-10 text-sm">{copyright}</span>
             </div>
         </nav>
     )

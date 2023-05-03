@@ -11,7 +11,7 @@ module.exports = function Headder() {
 
     return (
         <expandedContext.Provider value={[isExpanded, toggleExpanded]}>
-            <header className=" pt-9 flex justify-between w-11/12 mq-35rem:w-9/12 m-auto max-w-screen-2xl">
+            <header className=" pt-9 flex justify-between left-0 right-0 mq-35rem:mx-10 mx-16 m-auto fixed z-10">
                 <Logo></Logo>
                 <Hamburger></Hamburger>
                 <Nav></Nav>
