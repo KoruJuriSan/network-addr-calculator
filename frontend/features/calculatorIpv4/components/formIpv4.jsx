@@ -3,6 +3,7 @@ const PropTypes = require("prop-types")
 const CalculatorIpv4Title = require("./calculatorIpv4Title")
 const CalculatorIpv4Entry = require("./calculatorIpv4Entry")
 const CalculatorIpv4SubnetEntry = require("./calculatorIpv4SubnetEntry")
+const CalculatorIpv4CIDRInput = require("./calculatorIpv4CIDRInput")
 
 const circleSize = "5"
 
@@ -58,6 +59,9 @@ function FormIpv4({Addr, SubMask}) {
                         <CalculatorIpv4SubnetEntry value={SubMask[1].octet} setValue={SubMask[1].setOctet} isBinary={true} />
                         <CalculatorIpv4SubnetEntry value={SubMask[2].octet} setValue={SubMask[2].setOctet} isBinary={true} />
                         <CalculatorIpv4SubnetEntry value={SubMask[3].octet} setValue={SubMask[3].setOctet} isBinary={true} />
+                    </div>
+                    <div className=" flex justify-end w-full mt-4">
+                        <CalculatorIpv4CIDRInput submask={SubMask} />
                     </div>
                 </div>
             </div>
