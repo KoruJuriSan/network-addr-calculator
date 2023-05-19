@@ -18,7 +18,7 @@ module.exports = function Home() {
     return (
         <div className=" flex flex-wrap gap-32 justify-center py-32 bg-black">
             <article className="Call to action">
-                <h1 className=" text-4xl font-bold mb-7">sub.MASK &gt;</h1>
+                <h1 className=" text-4xl font-bold mb-7">sub.MASK &gt; <span className=" text-2xl">1.3.2</span></h1>
                 <div className=" mb-7">
                     <p className="
                     text-2xl
