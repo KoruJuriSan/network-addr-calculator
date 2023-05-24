@@ -1,10 +1,10 @@
 [
     {
         "name": "Accueil",
-        "link": "/"
+        "link": "network-addr-calculator/"
     },
     {
         "name": "Historique",
-        "link": "/history"
+        "link": "network-addr-calculator/history"
     }
 ]
