@@ -14,8 +14,8 @@ const App = function() {
             <div className="w-full h-full bg-black text-green">
                 <Headder />
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/history" element={<History />}></Route>
+                    <Route path="network-addr-calculator/" element={<Home />}></Route>
+                    <Route path="network-addr-calculator/history" element={<History />}></Route>
                 </Routes>
             </div>
             <Footer />
