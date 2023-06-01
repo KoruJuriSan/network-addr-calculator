@@ -16,7 +16,7 @@ module.exports = function Home() {
     })
 
     return (
-        <div className=" flex flex-wrap gap-32 justify-center py-32 bg-black">
+        <div className=" flex flex-wrap gap-32 mq-35rem:gap-20 justify-center py-32 bg-black">
             <article className="Call to action">
                 <h1 className=" text-4xl font-bold mb-7">sub.MASK &gt;</h1>
                 <div className=" mb-7">
