@@ -6,8 +6,9 @@
     "test": "npx jest",
     "dev": "npx parcel ./index.html",
     "build": "npx parcel build ./index.html --dist-dir ../",
-    "rebuild": "npm run delete-parcel-cache && npm run build",
-    "delete-parcel-cache": "if exist .parcel-cache (rmdir /s /q .parcel-cache)"
+    "delete-dist-files": "cd .. && if exist *.map (del *.map) && if exist *.js (del *.js) && if exist *.css (del *.css) && cd frontend",
+    "delete-parcel-cache": "if exist .parcel-cache (rmdir /s /q .parcel-cache)",
+    "rebuild": "npm run delete-parcel-cache && npm run delete-dist-files && npm run build"
   },
   "author": "Colle Joulian, Raucroix Romain, Vancoppenolle Brendan",
   "license": "ISC",
