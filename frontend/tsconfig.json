@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedParameters": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    }
+}

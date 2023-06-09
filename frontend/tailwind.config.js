@@ -2,7 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   green: "class",
-  content: ["./*.jsx", "./**/*.jsx", "./**/**/**/*.jsx"],
+  content: ["./*.tsx", "./**/*.tsx", "./**/**/**/*.tsx"],
   theme: {
     colors: {
       black: "#111111",
