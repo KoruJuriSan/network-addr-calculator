@@ -5,8 +5,8 @@
   "scripts": {
     "test": "npx vitest --globals",
     "dev": "npx parcel ./index.html",
-    "build": "npx parcel build ./index.html --dist-dir ../docs --public-url ./ --no-cache",
-    "delete-dist-files": "cd ../docs && if exist *.map (del *.map) && if exist *.js (del *.js) && if exist *.css (del *.css) && if exist *.html (del *.html) && cd ../frontend",
+    "build": "npx parcel build ./index.html --dist-dir ../ --public-url ./ --no-cache",
+    "delete-dist-files": "cd .. && if exist *.map (del *.map) && if exist *.js (del *.js) && if exist *.css (del *.css) && if exist *.html (del *.html) && cd frontend",
     "delete-parcel-cache": "if exist .parcel-cache (rmdir /s /q .parcel-cache)",
     "rebuild": "npm run delete-parcel-cache && npm run delete-dist-files && npm run build && npm run delete-parcel-cache"
   },
