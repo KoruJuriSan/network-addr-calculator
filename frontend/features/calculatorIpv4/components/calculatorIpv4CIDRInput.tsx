@@ -16,9 +16,9 @@ interface Props {
 }
 
 export default function CalculatorIpv4CIDRInput({submask}: Props) {
-    const value = React.useMemo(() => {
-        return parseSubnetToCIDR(submask.map((element) => element.octet))
-    }, [])
+    const value: string = React.useMemo(() => {
+        return parseSubnetToCIDR(submask.map((element) => element.octet)).toString()
+    }, [submask])
 
     const handleChange = React.useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
         let value: number = parseInt(event.target.value)
@@ -30,8 +30,6 @@ export default function CalculatorIpv4CIDRInput({submask}: Props) {
     }, [])
     
     return (
-        <input type="text" className={`w-16 text-xl text-center rounded-md bg-transparent border-2`} value={value.toString()} onChange={handleChange}/>
+        <input type="text" className={`w-16 text-xl text-center rounded-md bg-transparent border-2`} value={value} onChange={handleChange}/>
     )
 }
-
-module.exports = CalculatorIpv4CIDRInput
